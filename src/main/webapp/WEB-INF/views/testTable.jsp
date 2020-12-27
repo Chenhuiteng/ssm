@@ -32,13 +32,14 @@ layui.use('table', function(){
 	    ,url:'/test/findByList?sid=1'
 	    ,cellMinWidth: 80
 	    ,cols: [[
-	      {field:'sid', width:80, title: 'ID', sort: true}
-	      ,{field:'name', width:80, title: '用户名'}
-	      ,{field:'age', width:80, title: '年龄', sort: true}
-	      ,{field:'area', width:80, title: '地区'}
-	      ,{field:'birthTime', title: '生日',align:'center', width:180,templet:'<div>{{ layui.util.toDateString(d.birthTime, "yyyy-MM-dd HH:mm:ss") }}</div>'}
+	      {field:'sid',align:'center', title: 'ID', sort: true}
+	      ,{field:'name', align:'center',title: '用户名'}
+	      ,{field:'age',  align:'center',title: '年龄', sort: true}
+	      ,{field:'area',  align:'center',title: '地区'}
+	      ,{field:'birthTime', title: '生日',align:'center', templet:'<div>{{ layui.util.toDateString(d.birthTime, "yyyy-MM-dd HH:mm:ss") }}</div>'}
 	    ]]
 	    ,page: true
+	
 	  });
 	});
 
