@@ -29,7 +29,7 @@ layui.use('table', function(){
 	  var table = layui.table;
 	  table.render({
 	    elem: '#test'//table Id
-	    ,url:'/test/findByList?sid=1'
+	    ,url:'/test/findByList'
 	    ,cellMinWidth: 80
 	    ,cols: [[
 	      {field:'sid',align:'center', title: 'ID', sort: true}

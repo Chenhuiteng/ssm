@@ -16,13 +16,13 @@ public class tblResidentService {
 		// TODO Auto-generated method stub
 		return  residentMapper.selectByPrimaryKey(sid);
 	}
-	public List<tblResident> findByList(int sid,int start,int size) {
+	public List<tblResident> findByList(int start,int size) {
 		// TODO Auto-generated method stub
-		return  residentMapper.findList(sid,start,size);
+		return  residentMapper.findList(start,size);
 	}
-	public int findBycount(int sid) {
+	public int findBycount() {
 		// TODO Auto-generated method stub
-		return residentMapper.findBycount(sid);
+		return residentMapper.findBycount();
 	}
 
 }
