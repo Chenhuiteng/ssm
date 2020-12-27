@@ -47,6 +47,8 @@ public interface tblResidentMapper {
     /**
      * 自定义方法
      */
-   	 List<tblResident> findList(int sid);
+   	 List<tblResident> findList(int sid,int start,int size);
+
+	int findBycount(int sid);
    		
 }
